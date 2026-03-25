@@ -1,3 +1,5 @@
+https://github.com/CCFerreira/Lab01_PART1_18106237
+
 ## Arquitetura
 CSV → Python → Parquet → PostgreSQL
 
@@ -40,8 +42,8 @@ SELECT status, COUNT(*)
 FROM fato_pedidos
 GROUP BY status;
 
-delivered	96455
-canceled	6
+delivered |	96455
+canceled |	6
 
 ✔ Pedidos por mês
 SELECT t.ano, t.mes, COUNT(*)
