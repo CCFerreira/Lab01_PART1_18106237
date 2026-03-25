@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from urllib.parse import quote_plus
 
 senha = quote_plus("postgres123")
-engine = create_engine(f"postgresql://postgres:{5423322}@localhost:5432/lab01")
+engine = create_engine(f"postgresql://postgres:{senha}@localhost:5432/lab01")
 
 df = pd.read_parquet("data/silver/orders.parquet")
 
